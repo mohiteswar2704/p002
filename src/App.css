@@ -1,0 +1,98 @@
+.app{
+    height:100%;
+    overflow: auto;
+    
+}
+.app .profile{
+   width:800px;
+   max-width: 90%;
+   margin:50px auto;
+   display: flex;
+   align-items: center;
+}
+.app .profile img{
+   
+    height:100px;
+    width:100px;
+  
+}
+.app .profile .info{
+    margin-left:20px;
+}
+.app .profile .info .name{
+    font-size:20pt;
+    
+    margin-bottom:10px;
+}
+.app .profile .info .role{
+    font-size:14pt;
+    color:gray;
+    margin-bottom:20px;
+}
+.app .profile .info .bio{
+    margin-bottom: 5px;
+}
+.app.profile.info.button{
+    border: none;
+    border-radius:4px;
+    padding:10px 15px;
+    margin-right:5px;
+
+}
+.app .profile .info .message{
+    background-color: #0d0d0e;
+    color: white;
+}
+.app .status{
+    height:100px;
+    width:800px;
+    max-width: 90%;
+    margin:20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.app .status .status-item{
+    text-align: center;
+}
+.app .status .status-item .value{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.app .status .status-item .label{
+    font-size: 12pt;
+    color: gray;
+    text-transform: capitalize;
+}
+@media(max-width:768px){
+    .app .profile{
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .app .profile .info{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .app .profile img{
+        height: 80px;
+        width: 80px;
+    }
+    .app .profile .info .name{
+        font-size: 16pt;
+    }
+    .app .profile .info .role{
+        font-size: 12pt;
+    }
+    .app .status{
+        height: auto;
+        padding: 20px 0;
+    }
+    .app .status .status-item .value{
+        font-size: 16pt;
+    }
+    .app .status .status-item .label{
+        font-size: 10pt;
+    }
+}
